@@ -1,0 +1,1160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Секции */
+.section {
+    padding: 50px 0;
+}
+
+.intro .plants-animate img {
+    position: absolute;
+    animation: move 10s linear infinite;
+}
+
+/* Анимация для листьев */
+@keyframes move {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(20px) translateY(-10px);
+    }
+}
+
+/* Стиль для кнопок */
+button {
+    background-color: #458845;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff1e6;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 10px 0;
+}
+
+/* Шапка */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.3); 
+    padding: 10px 0;
+    backdrop-filter: blur(10px); 
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.header .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+
+.header .navbar ul li a {
+    color: rgb(0, 29, 11);
+    text-decoration: none;
+    font-size: 1.2rem; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Подсветка для навигационных ссылок */
+.header .navbar ul li a:hover {
+    color: #458845; 
+}
+
+/* Секция "Представление" */
+.intro {
+    background-color: #fdf6f0;
+    padding: 100px 0; 
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Контейнер для логотипа */
+.logo-container {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+}
+
+/* Логотип */
+.logo {
+    width: 110%; 
+    max-width: 500px; 
+}
+
+/* Секция "Представление" */
+.intro {
+    background-color: #fdf6f0; 
+    padding: 100px 0; 
+    text-align: center;
+    position: relative;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+/* Контейнер для логотипа */
+.logo-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+
+
+/* Координаты и изображения листьев */
+.leaf-1 {
+    background-image: url('images/1.png');
+    width: 5%;
+    height: 5%;
+    top: 10%;
+    left: 5%;
+}
+
+.leaf-2 {
+    background-image: url('images/2.png');
+    width: 6%;
+    height: 6%;
+    top: 20%;
+    left: 15%;
+}
+
+.leaf-3 {
+    background-image: url('images/3.png');
+    width: 7%;
+    height: 7%;
+    top: 30%;
+    left: 25%;
+}
+
+.leaf-4 {
+    background-image: url('images/4.png');
+    width: 5%;
+    height: 5%;
+    top: 40%;
+    left: 35%;
+}
+
+.leaf-5 {
+    background-image: url('images/5.png');
+    width: 6%;
+    height: 6%;
+    top: 50%;
+    left: 45%;
+}
+
+.leaf-6 {
+    background-image: url('images/6.png');
+    width: 7%;
+    height: 7%;
+    top: 60%;
+    left: 55%;
+}
+
+.leaf-7 {
+    background-image: url('images/7.png');
+    width: 5%;
+    height: 5%;
+    top: 70%;
+    left: 65%;
+}
+
+.leaf-8 {
+    background-image: url('images/8.png');
+    width: 6%;
+    height: 6%;
+    top: 80%;
+    left: 75%;
+}
+
+.leaf-9 {
+    background-image: url('images/9.png');
+    width: 7%;
+    height: 7%;
+    top: 90%;
+    left: 85%;
+}
+
+.leaf-10 {
+    background-image: url('images/10.png');
+    width: 5%;
+    height: 5%;
+    top: 15%;
+    left: 75%;
+}
+
+.leaf-11 {
+    background-image: url('images/11.png');
+    width: 6%;
+    height: 6%;
+    top: 25%;
+    left: 65%;
+}
+
+.leaf-12 {
+    background-image: url('images/12.png');
+    width: 7%;
+    height: 7%;
+    top: 35%;
+    left: 55%;
+}
+
+.leaf-13 {
+    background-image: url('images/13.png');
+    width: 5%;
+    height: 5%;
+    top: 45%;
+    left: 45%;
+}
+/* Листья */
+.leaf {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    pointer-events: none; 
+    animation: sway 5s infinite alternate; 
+}
+
+/* Анимация качания */
+@keyframes sway {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+/* Секция "О нас" */
+.about {
+    background-color: #fdf6f0; 
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Контейнер для текста и изображения */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; 
+}
+
+/* Текст слева */
+.about-text {
+    width: 50%; 
+    font-size: 1.3rem; 
+    color: #000; 
+    text-align: left;
+}
+
+/* Картинка справа */
+.about-image img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* Кнопка "Подробнее о нас" */
+.about-button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #458845;
+    text-decoration: underline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.flower-button {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Анимация для цветка при наведении */
+.flower-button:hover {
+    transform: rotate(180deg); 
+}
+
+/* Форма снизу */
+.subscription-form {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #458845;
+    text-align: center;
+}
+
+.subscription-form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.subscription-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.subscription-form button {
+    padding: 10px;
+    background-color: #458845;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscription-form button:hover {
+    background-color: #6a9f66;
+}
+
+/* Секция "О нас" */
+.about {
+    background-color: #fdf6f0; 
+    padding: 60px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Контейнер для текста и изображения */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; 
+}
+
+/* Текст слева */
+.about-text {
+    width: 50%; 
+    font-size: 1.3rem; 
+    color: #000; 
+    text-align: left;
+}
+
+/* Картинка справа */
+.about-image img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* Кнопка "Подробнее о нас" */
+.about-button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #458845;
+    text-decoration: underline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.flower-button {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Анимация для цветка при наведении */
+.flower-button:hover {
+    transform: rotate(180deg);
+}
+
+/* Форма */
+.subscription-form {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #458845;
+    text-align: center;
+}
+
+.subscription-form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.subscription-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.subscription-form button {
+    padding: 10px;
+    background-color: #458845;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscription-form button:hover {
+    background-color: #6a9f66;
+}
+
+/* Секция "Услуги" */
+.services {
+    background-color: #fdf6f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #458845;
+}
+
+/* Контейнер с услугами */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* Компонент услуги */
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    max-width: 300px; 
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Картинка услуги */
+.service-item img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Текст услуги */
+.service-item p {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Анимация: тень и увеличение при наведении */
+.service-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.service-item p:active {
+    color: #458845;
+}
+/* Заголовок для секции "О НАС" */
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #458845;
+    text-align: center;
+}
+/* Секция "Магазин" */
+.shop {
+    background-color: #fdf6f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.shop h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #458845;
+}
+
+/* Контейнер с товарами */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Товар */
+.shop-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 22%; 
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.shop-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.shop-item .item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.shop-item .item-price {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Анимация при наведении */
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Форма заказа */
+.order-form {
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #458845;
+    text-align: center;
+}
+
+.order-form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.order-form button {
+    padding: 10px;
+    background-color: #458845;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-form button:hover {
+    background-color: #6a9f66;
+}
+/* Контейнер с товарами */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+/* Товар */
+.shop-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); 
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/* Контейнер с товарами */
+.shop-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Товар */
+.shop-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Картинка товара */
+.shop-item img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Название товара */
+.shop-item .item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Цена товара */
+.shop-item .item-price {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Анимация при наведении */
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* Контейнер с товарами */
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Товар */
+.shop-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%; 
+}
+
+/* Картинка товара */
+.shop-item img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    margin: 0 auto 15px auto; 
+    display: block; 
+}
+
+/* Название товара */
+.shop-item .item-name {
+    font-size: 1.4rem; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Цена товара */
+.shop-item .item-price {
+    font-size: 1.2rem; 
+    color: #888;
+}
+
+/* Анимация при наведении */
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* Форма в разделе Магазин */
+.order-form {
+    margin-top: 30px; 
+    padding: 20px;
+    background: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Настройки полей формы */
+.order-form input,
+.order-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Кнопка формы */
+.order-form button {
+    background-color: #458845;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект на кнопку при наведении */
+.order-form button:hover {
+    background-color: #396d35;
+}
+
+/* Стиль для поля выбора товара */
+.order-form select {
+    height: 150px; 
+    resize: none; 
+}
+
+/* Заголовок формы */
+.order-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* Форма в разделе Магазин */
+.order-form {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Поля ввода */
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Заголовок формы */
+.order-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Стиль для списка товаров */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-item label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.product-item input[type="number"] {
+    width: 80px;
+    text-align: center;
+}
+
+/* Кнопка формы */
+.order-form button {
+    background-color: #458845;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Эффект на кнопку при наведении */
+.order-form button:hover {
+    background-color: #396d35;
+}
+/* Секция "Хиты продаж" */
+.hits {
+    background-color: #fdf6f0; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.hits h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #458845;
+}
+
+/* Контейнер с товарами */
+.hits-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* Карточка товара */
+.hit-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: calc(33.333% - 20px); 
+    max-width: 300px; 
+}
+
+/* Картинка товара */
+.hit-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Название товара */
+.hit-item .hit-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Цена товара */
+.hit-item .hit-price {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Анимация при наведении */
+.hit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка под товарами */
+.hits-button-container {
+    margin-top: 30px;
+}
+
+.hits-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #458845;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hits-button:hover {
+    background-color: #396d35;
+}
+/* Секция "Как мы работаем?" */
+.work {
+    background-color: #9eae7c; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.work h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #fff; 
+}
+
+/* Контейнер шагов */
+.work-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: flex-start; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Шаг */
+.work-step {
+    background: #fdf6f0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.5s ease-in-out; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Номер шага */
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #458845;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст шага */
+.work-step p {
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+}
+
+.work-step a {
+    color: #458845;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Плавное появление шага */
+.work-step.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+/* Контейнер шагов */
+.work-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Шаг */
+.work-step {
+    background: #fdf6f0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: all 0.5s ease-in-out; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 700px; 
+}
+
+/* Номер шага */
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #458845;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст шага */
+.work-step p {
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+    line-height: 1.5; 
+    flex: 1; 
+    text-align: left;
+}
+
+/* Плавное появление шага */
+.work-step.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+/* Секция "Контакты" */
+.contacts {
+    background-color: #77835d; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.contacts h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Контейнер для контактов */
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Логотип */
+.contacts-logo img {
+    width: 170px; 
+    height: auto;
+}
+
+/* Контактная информация */
+.contacts-info {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5; 
+}
+
+.contacts-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contacts-info a:hover {
+    color: #fdf6f0; 
+}
+/* Картинка в разделе "О НАС" */
+.about-image img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px; 
+}

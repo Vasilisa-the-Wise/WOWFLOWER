@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOWFLOWER - Магазин комнатных растений</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-text">• WOWFLOWER •</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#intro">Представление</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#shop">Магазин</a></li>
+                    <li><a href="#hits">Хиты продаж</a></li>
+                    <li><a href="#work">Как мы работаем</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Секция Представление -->
+    <section id="intro" class="section intro">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo-container">
+                <img src="images/лого.jpg" alt="WOWFLOWER" class="logo">
+            </div>
+    
+            <!-- Листья -->
+            <div class="leaves">
+                <div class="leaf leaf-1"></div>
+                <div class="leaf leaf-2"></div>
+                <div class="leaf leaf-3"></div>
+                <div class="leaf leaf-4"></div>
+                <div class="leaf leaf-5"></div>
+                <div class="leaf leaf-6"></div>
+                <div class="leaf leaf-7"></div>
+                <div class="leaf leaf-8"></div>
+                <div class="leaf leaf-9"></div>
+                <div class="leaf leaf-10"></div>
+                <div class="leaf leaf-11"></div>
+                <div class="leaf leaf-12"></div>
+                <div class="leaf leaf-13"></div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <!-- Секция О нас -->
+    <section id="about" class="section about">
+        <h2>О НАС</h2>
+        <div class="container">
+            <div class="about-text">
+                <p>Мы — команда, которая любит природу и верит в силу зеленых растений в доме. Наш магазин предлагает широкий выбор комнатных растений, которые придадут вашему интерьеру свежесть и уют. Мы заботимся о каждом растении, которое предлагаем, и уверены, что именно растения способны создать атмосферу комфорта и гармонии в вашем доме.</p>
+                <p>Наша миссия — помочь вам найти идеальных зеленых друзей, которые не только украсят пространство, но и принесут радость и пользу. Мы тщательно отбираем только самые красивые и здоровые растения, а также делаем акцент на их правильный уход и удобство покупки.</p>
+                <p>Пусть каждый уголок вашего дома станет уютным и живым с нашими растениями!</p>
+    
+                <!-- Кнопка "Подробнее о нас" -->
+                <div class="about-button-container">
+                    <button class="about-button">Подробнее о нас</button>
+                    <img src="images/кнопка.jpg" alt="цветок" class="flower-button">
+                </div>
+            </div>
+    
+            <!-- Картинка справа -->
+            <div class="about-image">
+                <img src="images/нас.jpg" alt="О нас">
+            </div>
+        </div>
+    
+        <!-- Форма снизу -->
+        <form class="subscription-form">
+            <h3>Заявка на еженедельную рассылку</h3>
+            
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <p>Выберите интересующие вас категории:</p>
+            <label><input type="checkbox" name="discounts" value="discounts"> Получать информацию о скидках и акциях</label>
+            <label><input type="checkbox" name="new_arrivals" value="new_arrivals"> Получать информацию о новых поступлениях</label>
+            <label><input type="checkbox" name="events" value="events"> Получать информацию о мероприятиях и мастер-классах</label>
+            
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>    
+    
+
+    <!-- Секция Услуги -->
+    <section id="services" class="section services">
+        <h2>УСЛУГИ</h2>
+        <div class="services-container">
+            <!-- Первый компонент -->
+            <div class="service-item">
+                <img src="images/услуги1.png" alt="Бесплатная пересадка">
+                <p>БЕСПЛАТНАЯ ПЕРЕСАДКА</p>
+            </div>
+            <!-- Второй компонент -->
+            <div class="service-item">
+                <img src="images/услуги2.png" alt="Редкие виды">
+                <p>РЕДКИЕ ВИДЫ</p>
+            </div>
+            <!-- Третий компонент -->
+            <div class="service-item">
+                <img src="images/услуги3.png" alt="Помощь в уходе">
+                <p>ПОМОЩЬ В УХОДЕ</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Секция Магазин -->
+    <section id="shop" class="section shop">
+        <h2>МАГАЗИН</h2>
+        <div class="shop-container">
+            <!-- Товары -->
+            <div class="shop-item">
+                <img src="images/адениум.jpg" alt="Адениум">
+                <p class="item-name">Адениум</p>
+                <p class="item-price">500 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/бегония.jpg" alt="Бегония">
+                <p class="item-name">Бегония</p>
+                <p class="item-price">300 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/мухоловка.jpg" alt="Венерина мухоловка">
+                <p class="item-name">Венерина мухоловка</p>
+                <p class="item-price">1200 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/зам.jpg" alt="Замиокулькас">
+                <p class="item-name">Замиокулькас</p>
+                <p class="item-price">1500 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/роули.jpg" alt="Крестовник Роули">
+                <p class="item-name">Крестовник Роули</p>
+                <p class="item-price">250 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/лит.jpg" alt="Литопсы">
+                <p class="item-name">Литопсы</p>
+                <p class="item-price">700 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/мар.jpg" alt="Маранта триколор">
+                <p class="item-name">Маранта триколор</p>
+                <p class="item-price">850 рублей</p>
+            </div>
+            <div class="shop-item">
+                <img src="images/хав.jpg" alt="Хавортия лимифолия вариегатная">
+                <p class="item-name">Хавортия лимифолия вариегатная</p>
+                <p class="item-price">1990 рублей</p>
+            </div>
+        </div>
+    
+        <!-- Форма заказа -->
+        <div class="order-form">
+            <h3>Форма заказа</h3>
+            <form id="order-form">
+                <label for="full-name">ФИО:</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Введите ваше ФИО">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+        
+                <label for="address">Адрес для доставки:</label>
+                <input type="text" id="address" name="address" required placeholder="Введите ваш адрес">
+        
+                <fieldset>
+                    <legend>Выберите растения и их количество:</legend>
+                    <div class="product-item">
+                        <label for="adenium">Адениум:</label>
+                        <input type="number" id="adenium" name="adenium" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="begonia">Бегония:</label>
+                        <input type="number" id="begonia" name="begonia" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="venus-flytrap">Венерина мухоловка:</label>
+                        <input type="number" id="venus-flytrap" name="venus-flytrap" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="zamioculcas">Замиокулькас:</label>
+                        <input type="number" id="zamioculcas" name="zamioculcas" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="roylei">Крестовник Роули:</label>
+                        <input type="number" id="roylei" name="roylei" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="lithops">Литопсы:</label>
+                        <input type="number" id="lithops" name="lithops" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="maranta">Маранта триколор:</label>
+                        <input type="number" id="maranta" name="maranta" min="0" placeholder="0">
+                    </div>
+                    <div class="product-item">
+                        <label for="haworthia">Хавортия лимифолия вариегатная:</label>
+                        <input type="number" id="haworthia" name="haworthia" min="0" placeholder="0">
+                    </div>
+                </fieldset>
+        
+                <button type="submit">Оформить заказ</button>
+            </form>
+        </div>
+        
+        
+    </section>
+    
+    
+
+    <!-- Секция Хиты продаж -->
+    <section id="hits" class="section hits">
+        <h2>ХИТЫ ПРОДАЖ</h2>
+        <div class="hits-container">
+            <!-- Первый товар -->
+            <div class="hit-item">
+                <img src="images/хит1.jpg" alt="Микс литопсов">
+                <p class="hit-name">Микс литопсов</p>
+                <p class="hit-price">700 рублей</p>
+            </div>
+            <!-- Второй товар -->
+            <div class="hit-item">
+                <img src="images/хит2.jpg" alt="Адениум Арабикум белый">
+                <p class="hit-name">Адениум Арабикум белый</p>
+                <p class="hit-price">550 рублей</p>
+            </div>
+            <!-- Третий товар -->
+            <div class="hit-item">
+                <img src="images/хит3.jpg" alt="Бегония бахромчатая красная">
+                <p class="hit-name">Бегония бахромчатая красная</p>
+                <p class="hit-price">300 рублей</p>
+            </div>
+        </div>
+    
+        <!-- Кнопка под товарами -->
+        <div class="hits-button-container">
+            <a href="#shop" class="hits-button">Полный ассортимент в нашем магазине</a>
+        </div>
+    </section>
+    
+
+    <!-- Секция Как мы работаем -->
+    <section id="work" class="section work">
+        <h2>КАК МЫ РАБОТАЕМ?</h2>
+        <div class="work-steps">
+            <div class="work-step">
+                <span class="step-number">1</span>
+                <p>Выбираете понравившееся растение из магазина <a href="#shop">ПЕРЕЙТИ К МАГАЗИНУ</a>.</p>
+            </div>
+            <div class="work-step">
+                <span class="step-number">2</span>
+                <p>Заполняете форму заказа в разделе <a href="#shop">МАГАЗИН</a>.</p>
+            </div>
+            <div class="work-step">
+                <span class="step-number">3</span>
+                <p>После получения вашей заявки на заказ мы связываемся с вами в рабочее время.</p>
+            </div>
+            <div class="work-step">
+                <span class="step-number">4</span>
+                <p>Получаете заказ. Мы подготовим растения к самовывозу или отправим доставкой на указанный адрес.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Секция Контакты -->
+    <section id="contacts" class="section contacts">
+        <h2>КОНТАКТЫ</h2>
+        <div class="contacts-container">
+            <!-- Контактная информация -->
+            <div class="contacts-info">
+                <p>г. Екатеринбург, ул. Цветочная 34</p>
+                <p>Телефон: <a href="tel:+79993433434">+7999-343-34-34</a></p>
+                <p>Email: <a href="mailto:wowflower@plant.ru">wowflower@plant.ru</a></p>
+            </div>
+            <div class="contacts-logo">
+                <img src="images/лого2.png" alt="WOWFLOWER">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
